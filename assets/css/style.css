@@ -1,0 +1,125 @@
+/* 
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Spacing system (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dongle", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.primary-button {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 4.8rem;
+  margin-left: 1.2rem;
+  font-size: 2.8rem;
+  border-radius: 0.8rem;
+}
+
+.primary-header {
+  font-family: "DM Serif Display", serif;
+  font-size: 4.8rem;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 192rem;
+  width: 95%;
+  margin: 3.2rem auto;
+  margin-bottom: 0;
+}
+
+.header-nav--list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.header-nav--list-item a:link,
+.header-nav--list-item a:visited {
+  color: #000;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* HERO */
+
+.hero {
+  max-width: 192rem;
+  width: 95%;
+  margin: 8rem auto;
+  margin-bottom: 0;
+  height: 80vh;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%),
+    url("../images/hero\ image.jpg");
+  background-size: 2200px;
+  border-radius: 10rem;
+  display: flex;
+  align-items: end;
+}
+
+.hero-overlay-text {
+  font-family: "DM Serif Display", serif;
+  font-size: 86rem;
+  position: fixed;
+  top: 6.2rem;
+  /* left: 50%;
+  translate: -50% 0; */
+}
+
+.hero-text {
+  margin-bottom: 6.4rem;
+  margin-left: 4.8rem;
+}
+
+.hero-text .primary-header {
+  margin-bottom: 2.4rem;
+}
+
+.hero-text p {
+  font-size: 2.4rem;
+  max-width: 50rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-text .primary-button {
+  margin-left: 0;
+}
