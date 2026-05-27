@@ -45,9 +45,26 @@ button {
   border-radius: 0.8rem;
 }
 
-.primary-header {
+.secondary-button {
+  color: #000;
+  border: 2px solid #000;
+  padding: 1rem 4.8rem;
+  font-size: 2.8rem;
+  border-radius: 0.8rem;
+  background-color: unset;
+}
+
+.primary-header,
+.highlighted-text {
   font-family: "DM Serif Display", serif;
   font-size: 4.8rem;
+}
+
+.sub-title {
+  font-size: 2.4rem;
+  line-height: 90%;
+  max-width: 50rem;
+  margin-bottom: 1.6rem;
 }
 
 /* HEADER */
@@ -83,9 +100,10 @@ button {
 .hero {
   max-width: 192rem;
   width: 95%;
+  height: 80vh;
+  min-height: 880px;
   margin: 8rem auto;
   margin-bottom: 0;
-  height: 80vh;
   color: #fff;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%),
@@ -94,13 +112,14 @@ button {
   border-radius: 10rem;
   display: flex;
   align-items: end;
+  margin-bottom: 6.4rem;
 }
 
 .hero-overlay-text {
   font-family: "DM Serif Display", serif;
-  font-size: 86rem;
-  position: fixed;
-  top: 6.2rem;
+  font-size: 62rem;
+  position: absolute;
+  top: 12.8rem;
   /* left: 50%;
   translate: -50% 0; */
 }
@@ -114,12 +133,273 @@ button {
   margin-bottom: 2.4rem;
 }
 
-.hero-text p {
-  font-size: 2.4rem;
-  max-width: 50rem;
+.hero-text .primary-button {
+  margin-left: 0;
+}
+
+/* INVENTORY */
+
+.inventory {
+  margin-bottom: 9.6rem;
+}
+
+.container {
+  max-width: 192rem;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.container .primary-header {
   margin-bottom: 1.6rem;
 }
 
-.hero-text .primary-button {
-  margin-left: 0;
+.container .sub-title {
+  color: #555;
+}
+
+.inventory-container {
+  max-width: 192rem;
+  width: 95%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.car-card {
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  background-color: #f4f4f4;
+}
+
+.car-image {
+  margin-bottom: 1.6rem;
+}
+
+.car-image img {
+  display: block;
+  width: 100%;
+}
+
+.highlight-text {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #575757;
+}
+
+.car-card .primary-header {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.car-detail-list {
+  padding-left: 1.2rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.car-detail-list-item {
+  font-size: 1.6rem;
+  color: #575757;
+}
+
+.line {
+  width: 80%;
+  height: 2px;
+  display: block;
+  margin: 0.8rem auto;
+  background-color: #333;
+}
+
+.check-out {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check-out .highlighted-text {
+  font-size: 2rem;
+}
+
+.check-out .secondary-button {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.8rem 4rem;
+}
+
+/* WHY_CHOOSE_US */
+
+.why-choose-us {
+  margin-bottom: 6.4rem;
+}
+
+.card-container {
+  max-width: 192rem;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.card {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: #f4f4f4;
+  border-radius: 1.6rem;
+}
+
+.card .primary-header {
+  font-size: 2rem;
+}
+
+.card .sub-title {
+  color: #575757;
+}
+
+.card .logo {
+  width: 85px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 1.2rem;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  margin-bottom: 6.4rem;
+}
+
+.testimonials-container {
+  max-width: 192rem;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.profile-details {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.profile-details .logo {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.profile-details .primary-header {
+  font-family: "Inter", sans-serif !important;
+  margin-bottom: 0.8rem;
+}
+
+.profile-details .sub-title {
+  margin-bottom: 0.2rem;
+}
+
+.comment {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  padding: 0 0.8rem;
+  color: #575757;
+}
+
+/* CONTACT */
+
+.contact-container {
+  width: 95%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contact-container .text-side {
+  padding: 6.4rem;
+}
+
+.contact-container .container .primary-header {
+  color: #fff;
+}
+
+.contact-container .container .sub-title {
+  color: #ccc;
+}
+
+.form {
+  padding: 4.8rem;
+  background-color: #222;
+}
+
+.form label {
+  color: #bbb;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.form-group .form-input-group {
+  margin-bottom: 0;
+}
+
+.form-input-group {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.form > .form-input-group:last-of-type {
+  margin-bottom: 4.8rem;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #888;
+  background-color: #bbb;
+  outline: none;
+}
+
+.input-field:focus-visible {
+  outline: 8px solid #fff;
+  border-radius: 8px;
+}
+
+.input-field::placeholder {
+  color: #888;
+  font-size: 1.6rem;
+}
+
+.form .secondary-button {
+  color: #fff;
+  border-color: #fff;
+  width: 100%;
+}
+
+.contact-container .image-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-container .image-side img {
+  display: block;
 }
